@@ -1,0 +1,26 @@
+*{
+        text-decoration: none;
+    }
+        
+    nav, footer {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        font-size: 25px;
+        color: goldenrod;
+        background-color: #004aad;             
+    }
+
+    a {
+        color: goldenrod;
+    }
+    a:hover {
+            background-color: white;
+        }
+
+    a:visited {
+        color: goldenrod;
+        }
+
+    body{
+        background-color: rgb(240,240,240);
+    }
