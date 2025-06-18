@@ -53,6 +53,7 @@ a:visited {
 
 body {
     margin-top: 60px;
+    margin-bottom: 60px;
     font-family: Arial, sans-serif;
     background-color: rgb(240, 240, 240);
 }
