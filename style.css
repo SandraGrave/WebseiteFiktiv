@@ -1,28 +1,51 @@
-*{
-        text-decoration: none;
-    }
-        
-    nav, footer {
-        text-align: center;
-        font-family: Arial, sans-serif;
-        font-size: 25px;
-        color: goldenrod;
-        background-color: #004aad;             
-    }
+* {
+    text-decoration: none;
+}
 
-    a {
-        color: goldenrod;
-    }
-    a:hover {
-            background-color: white;
-        }
+nav ul,
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    color: goldenrod;
+    background-color: #004aad;
+}
 
-    a:visited {
-        color: goldenrod;
-        }
+nav li,
+footer li {
+    display: inline;
+    margin-right: 10px;
+    width: 280px;
+}
 
-    body{
-        font-family: Arial, sans-serif;
-        font-size: 25px;
-        background-color: rgb(240,240,240);
-    }
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#top {
+    scroll-margin-top: 100px;
+}
+
+a {
+    color: goldenrod;
+}
+
+a:hover {
+    background-color: white;
+}
+
+a:visited {
+    color: goldenrod;
+}
+
+body {
+    margin-top: 60px;
+    font-family: Arial, sans-serif;
+    background-color: rgb(240, 240, 240);
+}
