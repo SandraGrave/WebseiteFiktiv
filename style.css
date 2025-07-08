@@ -3,16 +3,6 @@
     text-decoration: none;
 }
 
-.galerie *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.galerie img{
-    display: block;
-}
-
 /*------------ Navigationsleisten----------*/
 nav ul,
 footer ul {
@@ -42,6 +32,7 @@ nav {
 }
 
 nav a {
+    color: goldenrod;
     padding: 5px 8px;
 }
 
@@ -54,6 +45,10 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
+}
+
+footer a{
+    color: goldenrod;
 }
 
 footer a:visited{
@@ -138,20 +133,4 @@ html {
 
 .sprungmarke{
     scroll-margin-top: 60px;
-}
-
-/*-----------------Bildergalerie----------------*/
-
-.galerie{
-    max-width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    margin: auto;
-}
-
-.galerie img{
-    width: 30%;
-    height: 250px;
-    border: 2px solid goldenrod;
 }
