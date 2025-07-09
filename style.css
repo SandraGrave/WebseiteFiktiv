@@ -77,14 +77,14 @@ h1 {
     margin-bottom: 2px;
     font-size: 50px;
     color: #004aad;
-    text-shadow: 0.5px 2px 5px goldenrod;
+    text-shadow: 1px -1px 5px #9d97d4;
 }
 
 h2 {
     margin-top: 35px;
     margin-bottom: 2px;
     color: #004aad;
-    text-shadow: 0.5px 2px 5px goldenrod;
+    text-shadow: 1px -1px 2px #9d97d4;
 }
 
 h3 {
@@ -133,4 +133,42 @@ html {
 
 .sprungmarke{
     scroll-margin-top: 60px;
+}
+
+/*-------------- Team-Mitglieder---------------------*/
+table, th, td{
+    border: 1px solid #004aad;
+    border-collapse: collapse;  
+    padding: 5px 120px;
+    table-layout: fixed;
+    width: 60%;
+}
+
+td{
+    padding: 2px 0px;
+}
+
+th{
+    text-align: center;
+    background-color: #ceceeefd;
+}
+
+
+td:first-child{
+    font-weight: bold;
+    text-align: center;
+}
+
+tr:nth-child(even){
+    background-color: #d8d8e2;
+}
+
+td:last-child{
+    text-align: left;
+}
+
+tfoot{
+    color: #004aad;
+    text-align: left;
+    background-color: #ceceeefd;
 }
