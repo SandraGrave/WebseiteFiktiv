@@ -187,3 +187,36 @@ tfoot{
     text-align: left;
     background-color: #ceceeefd;
 }
+
+/*-------------Werbevideo------------*/
+.werbevideo{
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+video{
+    width: 700px;
+}
+
+.video-text{
+    flex: 1;
+}
+
+.stichpunkte-katzen ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 20px;
+    border: 2px solid #004aad;
+    background-color: rgb(250, 234, 234);
+}
+
+.stichpunkte-katzen li h3{
+    margin: 2px;
+}
+
+.werbevideo h2{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
