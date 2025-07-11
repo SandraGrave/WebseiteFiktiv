@@ -220,3 +220,19 @@ video{
     margin-top: 20px;
     margin-bottom: 5px;
 }
+
+/*-------------Impressum-------------------*/
+.impressum-text p{
+    line-height: 2;
+
+}
+
+.impressum-text a{
+    color: rgb(122, 8, 189);
+    text-decoration: underline;
+}
+
+.impressum-text a:visited{
+    color: rgb(122, 8, 189);
+    text-decoration: underline;
+}
