@@ -8,7 +8,7 @@ nav ul,
 footer ul {
     list-style-type: none;
     margin: 0;
-    padding: 10px 0px;
+    padding: 5px;
     text-align: center;
     font-family: Arial, sans-serif;
     font-size: 25px;
@@ -25,10 +25,32 @@ footer li {
 
 nav {
     position: fixed;
-    top: 0;
+    top: 80px;
     left: 0;
     width: 100%;
     color: goldenrod;
+}
+.logo-container{
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    background-color: #004aad;
+    z-index: 1000;
+}
+.logo-container img{
+    width: 80px;
+}
+
+.logo-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  font-weight: bold;
+  color: goldenrod;
+  text-shadow: 1.5px -1.5px 8px #da84e2;
 }
 
 nav a {
@@ -58,7 +80,7 @@ footer a:visited{
 /*----------------------------------------------------*/
 
 #top {
-    scroll-margin-top: 100px;
+    scroll-margin-top: 150px;
 }
 
 a:hover {
@@ -66,7 +88,7 @@ a:hover {
 }
 
 body {
-    margin-top: 60px;
+    margin-top: 120px;
     margin-bottom: 60px;
     font-family: Arial, sans-serif;
     background-color: rgb(240, 240, 240);
@@ -132,7 +154,7 @@ html {
 }
 
 .sprungmarke{
-    scroll-margin-top: 60px;
+    scroll-margin-top: 120px;
 }
 
 /*-----------------Bildergalerie----------------*/
@@ -156,7 +178,7 @@ table, th, td{
     border-collapse: collapse;  
     padding: 5px 120px;
     table-layout: fixed;
-    width: 60%;
+    width: 70%;
 }
 
 td{
