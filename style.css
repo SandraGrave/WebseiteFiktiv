@@ -236,3 +236,67 @@ video{
     color: rgb(122, 8, 189);
     text-decoration: underline;
 }
+
+/*---------------Kontakt-------------------*/
+.contact-wrapper{
+    background-color: #F2F7F9;
+    border: 6px solid goldenrod;
+    width: 1000px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    padding: 15px 0px;
+    margin: 50px auto;
+}
+
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: center;
+
+}
+
+.contact-form label{
+    font-weight: bold;
+}
+
+.contact-form input{
+    margin-bottom: 15px;
+}
+
+.contact-form input:focus{
+    border: 1px solid #004aad;
+    background-color: lightgoldenrodyellow;
+}
+
+.contact-form textarea{
+    border: 1px solid #CEE1E8;
+    resize: none;
+}
+
+.contact-form input[type="submit"]{
+    color: white;
+    font-weight: bold;
+    background-color: #004aad;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-container{
+    margin: 5px;
+    align-self: flex-end;
+}
+
+.submit-container input:hover{
+    background-color: goldenrod;
+    border-color: goldenrod;
+}
+
+.contact-form input:required:invalid,
+.contact-form textarea:required:invalid {
+  border: 2px solid red;
+  background-color: rgb(243, 240, 240);
+}

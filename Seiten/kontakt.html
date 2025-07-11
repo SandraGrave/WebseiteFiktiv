@@ -21,9 +21,35 @@
         </ul>
     </nav>
 
-    <h1>Kontakt</h1>
-    <a href="../index.html">zurück zur Startseite</a>
-    <p>Kontaktiere die Firma und so</p>
+    <header>
+        <h1>Kontakt</h1>
+    </header>
+
+    <main>
+        <div class="contact-wrapper">
+            <form class="contact-form">
+                <label for="fname">Vorname: *</label> <br>
+                <input type="text" id="fname" name="fname" placeholder="Vorname eingeben" required><br>
+
+                <label for="lname">Nachname *</label> <br>
+                <input type="text" id="lname" name="lname" placeholder="Nachname eingeben" required><br>
+
+                <label for="mail">E-Mail-Adresse: *</label> <br>
+                <input type="email" id="mail" name="mail" placeholder="E-Mail-Adresse eingeben"required><br>
+
+                <label for="telefon">Telefon:</label> <br>
+                <input type="text" id="telefon" name="telefon" placeholder="Telefonnummer eingeben"><br>
+
+                <label for="message">Nachricht: *</label> <br>
+                <textarea id="message" name="message" rows="6" required placeholder="Bitte Nachricht eintragen"></textarea><br>
+
+                <div class="submit-container">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </main>
+
 </body>
 
 <footer>
