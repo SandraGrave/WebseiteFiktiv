@@ -24,33 +24,46 @@ footer li {
 }
 
 nav {
-    position: fixed;
-    top: 80px;
+    grid-row: 2;
+    top: 60px;
     left: 0;
     width: 100%;
     color: goldenrod;
 }
-.logo-container{
+
+.header-container {
+    display: grid;
+    grid-template-columns: 110px auto;
+     grid-template-rows: 70px auto;
     position: fixed;
-    top: 0px;
+    top: 0;
     left: 0;
     width: 100%;
-    background-color: #004aad;
-    z-index: 1000;
-}
-.logo-container img{
-    width: 80px;
 }
 
-.logo-text {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 60px;
-  font-weight: bold;
-  color: goldenrod;
-  text-shadow: 1.5px -1.5px 8px #da84e2;
+#logo {
+    grid-row: 1 / span 2;
+    width: 110px;
+}
+
+.firmenname-container {
+    grid-column: 2; 
+    background-color: #004aad;
+}
+
+.nav-container {
+    grid-column: 2;
+    background-color: #004aad; 
+}
+
+.firmenname {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+    font-weight: bold;
+    color: goldenrod;
+    text-shadow: 1.5px -1.5px 8px #da84e2;
 }
 
 nav a {
@@ -69,12 +82,12 @@ footer {
     width: 100%;
 }
 
-footer a{
+footer a {
     color: goldenrod;
 }
 
-footer a:visited{
-    color:goldenrod;
+footer a:visited {
+    color: goldenrod;
 }
 
 /*----------------------------------------------------*/
@@ -121,19 +134,24 @@ h4 {
     margin-bottom: 0;
 }
 
-p{
+p {
     margin-top: 3px;
     margin-bottom: 3px;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 /*---------------Seite: Leistungen----------------- */
 
 .button-list {
     list-style-type: none;
+    color: #004aad;
+}
+
+.button-list a:link{
+    color: #004aad;
 }
 
 .button-list li {
@@ -148,16 +166,16 @@ html {
     box-shadow: 5px 5px 15px grey;
 }
 
-.button-list a:visited{
+.button-list a:visited {
     color: #004aad;
 }
 
-.sprungmarke{
+.sprungmarke {
     scroll-margin-top: 120px;
 }
 
 /*-----------------Bildergalerie----------------*/
-.galerie{
+.galerie {
     max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
@@ -165,66 +183,67 @@ html {
     margin: auto;
 }
 
-.galerie img{
+.galerie img {
     width: 30%;
     height: 250px;
     border: 2px solid goldenrod;
 }
 
 /*-------------- Team-Mitglieder---------------------*/
-table, th, td{
+table,
+th,
+td {
     border: 1px solid #004aad;
-    border-collapse: collapse;  
+    border-collapse: collapse;
     padding: 5px 120px;
     table-layout: fixed;
-    width: 70%;
+    width: 80%;
 }
 
-td{
+td {
     padding: 2px 0px;
 }
 
-th{
+th {
     text-align: center;
     background-color: #ceceeefd;
 }
 
-
-td:first-child{
+td:first-child {
     font-weight: bold;
     text-align: center;
 }
 
-tr:nth-child(even){
+tr:nth-child(even) {
     background-color: #d8d8e2;
 }
 
-td:last-child{
+td:last-child {
     text-align: left;
 }
 
-tfoot{
+tfoot {
     color: #004aad;
     text-align: left;
     background-color: #ceceeefd;
 }
 
 /*-------------Werbevideo------------*/
-.werbevideo{
+.werbevideo {
     display: flex;
     gap: 20px;
     align-items: flex-start;
 }
 
-video{
+video {
     width: 700px;
 }
 
-.video-text{
+.video-text {
     flex: 1;
 }
 
-.stichpunkte-katzen ul{
+.stichpunkte-katzen ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
@@ -233,71 +252,71 @@ video{
     background-color: rgb(250, 234, 234);
 }
 
-.stichpunkte-katzen li h3{
+.stichpunkte-katzen li h3 {
     margin: 2px;
 }
 
-.werbevideo h2{
+.werbevideo h2 {
     margin-top: 20px;
     margin-bottom: 5px;
 }
 
 /*-------------Impressum-------------------*/
-.impressum-text p{
+.impressum-text p {
     line-height: 2;
 
 }
 
-.impressum-text a{
+.impressum-text a {
     color: rgb(122, 8, 189);
     text-decoration: underline;
 }
 
-.impressum-text a:visited{
+.impressum-text a:visited {
     color: rgb(122, 8, 189);
     text-decoration: underline;
 }
 
 /*---------------Kontakt-------------------*/
-.contact-wrapper{
+.contact-wrapper {
     background-color: #F2F7F9;
     border: 6px solid goldenrod;
     width: 1000px;
     border-radius: 15px;
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     align-items: center;
     padding: 15px 0px;
     margin: 50px auto;
 }
 
-.contact-form{
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  justify-content: center;
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
 
 }
 
-.contact-form label{
+.contact-form label {
     font-weight: bold;
 }
 
-.contact-form input{
+.contact-form input {
     margin-bottom: 15px;
 }
 
-.contact-form input:focus{
+.contact-form input:focus {
     border: 1px solid #004aad;
     background-color: lightgoldenrodyellow;
 }
 
-.contact-form textarea{
+.contact-form textarea {
     border: 1px solid #CEE1E8;
     resize: none;
 }
 
-.contact-form input[type="submit"]{
+.contact-form input[type="submit"] {
     color: white;
     font-weight: bold;
     background-color: #004aad;
@@ -306,18 +325,18 @@ video{
     cursor: pointer;
 }
 
-.submit-container{
+.submit-container {
     margin: 5px;
     align-self: flex-end;
 }
 
-.submit-container input:hover{
+.submit-container input:hover {
     background-color: goldenrod;
     border-color: goldenrod;
 }
 
 .contact-form input:required:invalid,
 .contact-form textarea:required:invalid {
-  border: 2px solid red;
-  background-color: rgb(243, 240, 240);
+    border: 2px solid red;
+    background-color: rgb(243, 240, 240);
 }
