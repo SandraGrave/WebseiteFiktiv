@@ -1,70 +1,161 @@
 /*---------------------------- Allgemein ------------------------*/
 * {
     text-decoration: none;
+    box-sizing: border-box;
 }
 
-/*------------ Navigationsleisten----------*/
-nav ul,
-footer ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 5px;
-    text-align: center;
+
+
+/*------------ Navigationsleisten Desktop----------*/
+@media only screen and (min-width:600px) {
+
+    .header-container {
+        display: grid;
+        grid-template-columns: 110px auto;
+        grid-template-rows: 70px auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #004aad;
+        z-index: 1000;
+    }
+
+    #logo {
+        grid-row: 1 / span 2;
+        width: 110px;
+    }
+
+    .firmenname-container,
+    .nav-container {
+        grid-column: 2;
+        background-color: #004aad;
+    }
+
+    .firmenname {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 55px;
+        font-weight: bold;
+        color: goldenrod;
+        text-shadow: 1.5px -1.5px 8px #da84e2;
+    }
+
+    nav ul,
+    footer ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 5px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        font-size: 25px;
+        color: goldenrod;
+        background-color: #004aad;
+    }
+
+    nav li,
+    footer li {
+        display: inline-block;
+        margin-right: 0 10px;
+    }
+
+    nav {
+        grid-row: 2;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        color: goldenrod;
+    }
+
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    header {
+        margin-top: 150px;
+        /* Höhe Header + Navigation */
+    }
+
+    body {
+    margin: 0px 150px;
     font-family: Arial, sans-serif;
-    font-size: 25px;
-    color: goldenrod;
-    background-color: #004aad;
+    background-color: rgb(240, 240, 240);
+}
 }
 
-nav li,
-footer li {
-    display: inline;
-    margin-right: 10px;
-    width: 280px;
+/*----Navigation Mobil------*/
+@media only screen and (max-width:600px) {
+
+    .header-container {
+        display: grid;
+        grid-template-columns: 100px auto;
+        grid-template-rows: 50px auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #004aad;
+    }
+
+    #logo {
+        grid-row: 1 / span 2;
+        width: 100px;
+    }
+
+    .firmenname-container,
+    .nav-container {
+        grid-column: 2;
+        background-color: #004aad;
+    }
+
+    .firmenname {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        font-weight: bold;
+        color: goldenrod;
+        text-shadow: 1.5px -1.5px 8px #da84e2;
+    }
+
+    nav ul,
+    footer ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 5px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        font-size: 25px;
+        color: goldenrod;
+        background-color: #004aad;
+    }
+
+    nav li,
+    footer li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    header {
+        margin-top: 290px;
+        /* Höhe Header + Navigation */
+
+    }
+
+    body {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    background-color: rgb(240, 240, 240);
 }
 
-nav {
-    grid-row: 2;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    color: goldenrod;
 }
 
-.header-container {
-    display: grid;
-    grid-template-columns: 110px auto;
-     grid-template-rows: 70px auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
-#logo {
-    grid-row: 1 / span 2;
-    width: 110px;
-}
-
-.firmenname-container {
-    grid-column: 2; 
-    background-color: #004aad;
-}
-
-.nav-container {
-    grid-column: 2;
-    background-color: #004aad; 
-}
-
-.firmenname {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 55px;
-    font-weight: bold;
-    color: goldenrod;
-    text-shadow: 1.5px -1.5px 8px #da84e2;
-}
+/*---------------------------------------------*/
 
 nav a {
     color: goldenrod;
@@ -75,12 +166,6 @@ nav a:visited {
     color: goldenrod;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
 
 footer a {
     color: goldenrod;
@@ -92,19 +177,23 @@ footer a:visited {
 
 /*----------------------------------------------------*/
 
-#top {
-    scroll-margin-top: 150px;
+@media only screen and (min-width:600px) {
+    #top {
+        scroll-margin-top: 150px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    #top {
+        scroll-margin-top: 1000px;
+    }
 }
 
 a:hover {
     background-color: white;
 }
 
-body {
-    margin: 120px 250px 60px;
-    font-family: Arial, sans-serif;
-    background-color: rgb(240, 240, 240);
-}
+
 
 h1 {
     margin-top: 35px;
@@ -150,7 +239,7 @@ html {
     color: #004aad;
 }
 
-.button-list a:link{
+.button-list a:link {
     color: #004aad;
 }
 
