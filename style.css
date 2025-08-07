@@ -273,13 +273,13 @@ html {
         width: 30%;
         height: auto;
         border: 2px solid goldenrod;
-        object-fit: cover; 
+        object-fit: cover;
     }
 }
 
 /*---- Mobil----*/
-@media only screen and (max-width: 600px){
-      .galerie {
+@media only screen and (max-width: 600px) {
+    .galerie {
         max-width: 1200px;
         display: flex;
         flex-wrap: wrap;
@@ -291,28 +291,41 @@ html {
         width: 49%;
         height: auto;
         border: 2px solid goldenrod;
-        object-fit: cover; 
+        object-fit: cover;
     }
 }
 
 /*-------------- Team-Mitglieder---------------------*/
+/*------- Desktop & Mobil -----*/
+.table-wrapper {
+    overflow-x: auto;
+    width: 100%;
+}
+
 table,
 th,
 td {
     border: 1px solid #004aad;
     border-collapse: collapse;
-    padding: 5px 120px;
+    padding: 5px;
     table-layout: fixed;
-    width: 80%;
+    width: 100%;
 }
 
 td {
-    padding: 2px 0px;
+    padding: 2px 2px;
+    word-break: break-word;
+    overflow-wrap: anywhere;
 }
 
 th {
     text-align: center;
     background-color: #ceceeefd;
+}
+
+td:first-child {
+    font-weight: bold;
+    text-align: center;
 }
 
 td:first-child {
