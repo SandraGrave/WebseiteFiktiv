@@ -436,10 +436,11 @@ tfoot {
 }
 
 /*---------------Kontakt-------------------*/
+/*-------Desktop-------*/
 .contact-wrapper {
     background-color: #F2F7F9;
     border: 6px solid goldenrod;
-    width: 1000px;
+    max-width: 1000px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -453,7 +454,6 @@ tfoot {
     flex-direction: column;
     width: 90%;
     justify-content: center;
-
 }
 
 .contact-form label {
@@ -497,4 +497,19 @@ tfoot {
 .contact-form textarea:required:invalid {
     border: 2px solid red;
     background-color: rgb(243, 240, 240);
+}
+
+/*-------Mobil-------*/
+@media only screen and (max-width: 600px) {
+    .contact-wrapper {
+        background-color: #F2F7F9;
+        border: 6px solid goldenrod;
+        max-width: 600px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0px;
+        margin: 50px auto;
+    }
 }
